@@ -41,6 +41,7 @@ export default {};
 
 .post-title {
   margin: 0;
+  font-size: 30px;
 }
 
 .post-details {

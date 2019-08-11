@@ -14,5 +14,16 @@ export default {
 };
 </script>
 <style>
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  margin: 0;
+}
 </style>
