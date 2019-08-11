@@ -1,16 +1,25 @@
 <template>
   <div>
-    <Header/>
-    <p>Please enter an id and click the button</p>
+      <input type="text" v-model="userId">
+      <button @click="onLoadUser">Load User</button>
   </div>
 </template>
 
 <script>
-import Header from "~/components/Header.vue";
 export default {
-  layout: "users",
+  data() {
+    return {
+      userId: null
+    };
+  },
   components: {
-    Header
+  },
+  methods: {
+    onLoadUser() {
+      this.$router.push(`/users/${this.userId}`);
+    }
   }
+  // To add a different layout
+  // layout: "users"
 };
 </script>

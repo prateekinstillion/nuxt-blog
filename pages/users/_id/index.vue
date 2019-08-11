@@ -13,8 +13,7 @@ export default {
       return false;
     }
     return true;
-  },
-  layout: "users"
+  }
 };
 </script>
 
